@@ -8,8 +8,10 @@ function App() {
         JSON.parse(localStorage.getItem("todoList"))
       : []
   );
+
   const [newTodo, setNewTodo] = useState("");
 
+  //functions
   const handleInput = (event: React.ChangeEvent<HTMLInputElement>) => {
     setNewTodo(event.target.value);
   };
